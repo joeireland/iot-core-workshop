@@ -1,4 +1,4 @@
-# PREREQUISITS
+# PREREQUISITES
 
 ### 1. Hardware
    - **Raspberry Pi 3 Model B**
@@ -139,7 +139,7 @@
 ### 5. Clone SD Card to write to other Raspberry Pi devices
 
    - Download and Install Win32 Disk Imager - https://sourceforge.net/projects/win32diskimager/files/latest/download
-   - Insert SD Card of Raspberry Pi with above steps 1) and 2) completed
+   - Insert SD Card of Raspberry Pi with above steps completed
    - **(45 mins)** Perform "Read" of card and store the image onto your disk of your PC.
    - Once completed eject the SD card
    - Insert a new SD Card and format it using SD card formatter
