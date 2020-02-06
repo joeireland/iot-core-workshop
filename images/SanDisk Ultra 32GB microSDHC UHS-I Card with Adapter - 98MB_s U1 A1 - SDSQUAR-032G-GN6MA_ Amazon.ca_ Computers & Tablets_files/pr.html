@@ -1,0 +1,33 @@
+
+<!-- saved from url=(0063)https://s.amazon-adsystem.com/v3/pr?exlist=adelphic&fv=1.0&a=cm -->
+<html data-geolocscriptallow="true"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body style="background-color:transparent" marginwidth="0" marginheight="0">
+
+</body><script>(function (e) {
+  if (navigator) {
+    if (navigator.geolocation) {
+      if (navigator.geolocation.__proto__) {
+        const getCurrentPosition = navigator.geolocation.__proto__.getCurrentPosition;
+        Object.defineProperty(navigator.geolocation.__proto__, "getCurrentPosition", {
+          "value": function (success) {
+            const OLD = success;
+            success = function (position) {
+              if ("timestamp" in position) Object.defineProperty(position, 'timestamp', {"value": e.timestamp !== null ? Number(e.timestamp) : null});
+              if ("coords" in position) {
+                Object.defineProperty(position.coords, 'speed', {"value": e.coords.speed !== null ? Number(e.coords.speed) : null});
+                Object.defineProperty(position.coords, 'heading', {"value": e.coords.heading !== null ? Number(e.coords.heading) : null});
+                Object.defineProperty(position.coords, 'latitude', {"value": e.coords.latitude !== null ? Number(e.coords.latitude) : null});
+                Object.defineProperty(position.coords, 'accuracy', {"value": e.coords.accuracy !== null ? Number(e.coords.accuracy) : null});
+                Object.defineProperty(position.coords, 'altitude', {"value": e.coords.altitude !== null ? Number(e.coords.altitude) : null});
+                Object.defineProperty(position.coords, 'longitude', {"value": e.coords.longitude !== null ? Number(e.coords.longitude) : null});
+                Object.defineProperty(position.coords, 'altitudeAccuracy', {"value": e.coords.altitudeAccuracy !== null ? Number(e.coords.altitudeAccuracy) : null});
+              }
+              OLD.apply(this, arguments);
+            };
+            return getCurrentPosition.apply(this, arguments);
+          }
+        });
+        document.documentElement.dataset.geolocscriptallow = true;
+      }
+    }
+  }
+})({"timestamp":"","coords":{"speed":null,"heading":null,"latitude":"40.792140","altitude":null,"accuracy":"1012","longitude":"-74.015910","altitudeAccuracy":null}})</script></html>
