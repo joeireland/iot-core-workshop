@@ -14,20 +14,7 @@
 
    ![Connect](images/connect-grove-pi.jpg)
 
-### 3. Connect power supply to Raspberry Pi
-   - Once powered the red LED turns on and the green LED flashes
-
-
-   ![Connect](images/connect-power.png)
-
-### 4. Determine IP address of Raspberry Pi
-   - While the Raspberry Pi boots you'll see a message on the LCD display indicating it's **Starting**
-   - After the Raspbery Pi boots it diplays the IP address in green as shown below (in your case the IP address may differ). Take note of this IP address for use when you SSH onto the Raspbery Pi.
-
-
-   ![Connect](images/ip-address.png)
-
-### 5. Observe Connected Input/Output Devices
+### 3. Observe Connected Input/Output Devices
    - Red LED is connected to D2 digital I/O line
    - Blue LED is connected to D3 digital I/O line
    - Push button is connected to D7 digital I/O line
@@ -37,6 +24,19 @@
 
 
    ![Connect](images/grove-pi-built.png)
+
+### 4. Connect power supply to Raspberry Pi
+   - Once powered the red LED turns on and the green LED flashes
+
+
+   ![Connect](images/connect-power.png)
+
+### 5. Determine IP address of Raspberry Pi
+   - While the Raspberry Pi boots you'll see a message on the LCD display indicating it's **Starting**
+   - After the Raspbery Pi boots it diplays the IP address in green as shown below (in your case the IP address may differ). Take note of this IP address for use when you SSH onto the Raspbery Pi.
+
+
+   ![Connect](images/ip-address.png)
 
 ### 6. SSH onto Raspberry PI using Chrome SSH App
    - Launch the **Google Chrome Secure Shell App** (install app if not already installed using this URL - https://chrome.google.com/webstore/detail/secure-shell-app/pnhechapfaindjhompbnflcldabbghjo?hl=en)
