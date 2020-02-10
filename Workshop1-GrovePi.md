@@ -3,46 +3,81 @@
 ### 1. Connect Camera to Raspberry Pi
    - Gently push the camera module's ribbon into the Raspberry Pi
    - Ensure the blue-side is facing the Ethernet jack and that it's properly seated
+
+
    ![Connect Camera](images/connect-camera.jpg)
 
 ### 2. Connect Grove Pi+ sensor board to Raspberry Pi
    - **IMPORTANT: Make sure Raspberry Pi power supply IS NOT connected before inserting the Grove Pi+**
    - Be careful to ensure that the pins are properly aligned as shown below
+
+
    ![Connect](images/connect-grove-pi.jpg)
 
 ### 3. Connect power supply to Raspberry Pi
    - Once powered the red LED turns on and the green LED flashes
-   ![Connect](images/connect-power.webp)
+
+
+   ![Connect](images/connect-power.png)
 
 ### 4. Determine IP address of Raspberry Pi
    - While the Raspberry Pi boots you'll see a message on the LCD display indicating it's **Starting**
    - After the Raspbery Pi boots it diplays the IP address in green as shown below (in your case the IP address may differ). Take note of this IP address for use when you SSH onto the Raspbery Pi.
 
+
    ![Connect](images/ip-address.png)
 
-### 5. SSH onto Raspberry PI using Chrome SSH Extension
-   - Launch the **Google Chrome Secure Shell Extention** (install extension if not already installed using this URL - https://chrome.google.com/webstore/detail/secure-shell-extension/iodihamcpbpeioajjeobimgagajmlibd?hl=en)
+### 5. Observe Connected Input/Output Devices
+   - Red LED is connected to D2 digital I/O line
+   - Blue LED is connected to D3 digital I/O line
+   - Push button is connected to D7 digital I/O line
+   - Buzzer is connected to D8 digital I/O line
+   - Angle sensor is connected to A0 analog input line
+   - LCD screen is connected to I2C-1 output line
+
+
+   ![Connect](images/grove-pi-built.png)
+
+### 6. SSH onto Raspberry PI using Chrome SSH App
+   - Launch the **Google Chrome Secure Shell App** (install app if not already installed using this URL - https://chrome.google.com/webstore/detail/secure-shell-app/pnhechapfaindjhompbnflcldabbghjo?hl=en)
+   - Press **Apps** icon displayed on your bookmark bar
+
+
+   ![SSH to Raspberry Pi](images/launch-ssh-app.png)
+   - Press **Secure Shell App** icon
+
+
+   ![SSH to Raspberry Pi](images/launch-ssh-app2.png)
+
    - Enter a username of **pi**, the IP address displayed on the LCD screen connected to your Raspberry Pi, enter port ***80*** and press the **[ENTER] Connect** button.
 
-   
-   NOTE: The password to use when logging in is written on the brown box of your Raspberry Pi. Also note that the IP address assigned to your Raspberry Pi may differ from the example shown in the screen capture below.
+
+   **NOTE: The password to use when logging in is written on the brown box of your Raspberry Pi. Also note that the IP address assigned to your Raspberry Pi may differ from the example shown in the screen capture below.**
 
 
    ![SSH to Raspberry Pi](images/ssh-to-raspberry-pi.png)
 
-### 6. Create Node.js program to test the Grove Pi+ Sensors
+### 7. Create Node.js program to test the Grove Pi+ Sensors
+   - Create a directory, initalize a Node.js project using **npm init** and install the **node-grovepi** NPM library for use by the project using the following commands:
+
 
    pi@raspberrypi:~ $ **cd ~/Development**<br>
    pi@raspberrypi:~ $ **mkdir iot-workshop**<br>
    pi@raspberrypi:~ $ **cd iot-workshop**<br>
-   pi@raspberrypi:~ $ **npm init** *(when prompted press enter to select the default value)*<br> 
-   pi@raspberrypi:~ $ **npm install -s node-grovepi**<br>
+   pi@raspberrypi:~ $ **npm init** *(for each prompt press enter to select the default value)*<br> 
+   pi@raspberrypi:~ $ **npm install -s node-grovepi** *(Ignore all warning this may generate)*<br>
 
    ![npm init](images/npm-init.png)
+   - Create a test program to control the Grove Pi+ board and its sensors. The program will flash the Red LED light, beep the buzzer, detect button presses and detect angle sensor changes. Use your favorite editor to save this program to a file named **index.js**<br>
 
-   pi@raspberrypi:~ $ **nano index.js**<br>
-   Copy and paste the following code into the nano edit session and save the file.<br>
+
+   pi@raspberrypi:~ $ **nano index.js** *(press control-X to exit and press Y to save the file)*<br>
+
+
    **HINT: Use the right mouse button to copy and paste when using Google Chrome SSH**
+
+
+   ![npm init](images/nano-edit2.png)
 
 <pre>
 const GrovePi = require('node-grovepi').GrovePi;
@@ -125,7 +160,7 @@ function monitorAngle() {
 main();
 </pre>
 
-### 7. Run the test program
+### 8. Run the test program
 
    pi@raspberrypi:~ $ **node index.js**<br>
    - The red LED should turn on and off once
@@ -138,18 +173,18 @@ main();
    
    ![Test Grove Pi+ Sensors](images/test-grove-pi.png)
 
-### 8. Test the Camera
+### 9. Test the Camera
 
-   pi@raspberrypi:~ $ **raspistill -v -o test.jpg**<br>
+   pi@raspberrypi:~ $ **raspistill -v -o test.jpg**<br> 
    *this will capture a picture and store it in test.jpg*
 
    ![Test Camera](images/test-camera.png)
 
-   - Launch the **Google Chrome Secure Shell Extention** in another tab to start an SFTP session
+   - Launch the **Google Chrome Secure Shell App** in another tab to start an SFTP session
    - Enter a username of **pi**, the IP address displayed on the LCD screen connected to your Raspberry Pi, enter port **80** and press the **SFTP** button.
 
    
-   NOTE: The password to use when logging in is written on the brown box of your Raspberry Pi. Also note that the IP address assigned to your Raspberry Pi may differ from the example shown in the screen capture below.
+   **NOTE: The password to use when logging in is written on the brown box of your Raspberry Pi. Also note that the IP address assigned to your Raspberry Pi may differ from the example shown in the screen capture below.**
 
 
    ![SFTP Raspberry Pi](images/sftp-raspberry-pi.png)

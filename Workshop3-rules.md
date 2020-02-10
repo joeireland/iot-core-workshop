@@ -139,7 +139,7 @@
 
    **PART 1:** Create a Lambda function which will act as the rule's action
 
-   - Launch the **Google Chrome Secure Shell Extention**
+   - Launch the **Google Chrome Secure Shell App**
    - Enter a username of **pi**, the IP address displayed on the LCD screen connected to your Raspberry Pi and press the **[ENTER] Connect** button. Note that the password to use when logging in is written on the brown box of your Raspberry Pi.
 
 
@@ -150,8 +150,20 @@
    pi@raspberrypi:~ $ **cd iot-workshop-lambda**<br>
    pi@raspberrypi:~ $ **npm init** *(when prompted press enter to select the default value)*<br>
    pi@raspberrypi:~ $ **npm -s install twilio**<br>
+
+
+   ![Nano Edit](images/edit-lambda1.png)
+   - Use your favorite text editor to create a file named **index.js**.
+
+
    pi@raspberrypi:~ $ **nano index.js**<br>
-   Copy and paste the following code into the nano edit session and save the file.<br>
+
+
+   ![Nano Edit](images/nano-edit4.png)
+   - Copy and paste the code below into it
+
+
+   **HINT: Right mouse button may be used to copy and paste when using Google Chrome SSH**
 
 <pre>
 const Twilio = require('twilio');
@@ -190,14 +202,14 @@ exports.handler = async (event) => {
 };
 </pre>
 
-   ![SFTP Raspberry Pi](images/edit-lambda1.png)
-   ![SFTP Raspberry Pi](images/edit-lambda2.png)
-
-   - Press **CTRL-X** to Exit and **Y** when prompted to save the file
-   - Once the file is saved, create a zip file of the Lambda function so we can deploy it to AWS<br>
-   pi@raspberrypi:~ $ **zip -r makecall.zip index.js node_modules package.json package-lock.json**<br>
-   - Launch the **Google Chrome Secure Shell Extention** in another tab to start a SFTP session
-   - Enter a username of **pi**, the IP address displayed on the LCD screen connected to your Raspberry Pi and press the **SFTP** button. Note that the password to use when logging in is written on the brown box of your Raspberry Pi.
+   - If using **nano** to edit the file then press **CTRL-X** to Exit and **Y** when prompted to save it
+   - Once the file is saved, create a zip file of the Lambda function so we can deploy it to AWS<br><br>
+   pi@raspberrypi:~ $ **zip -r makecall.zip index.js node_modules package.json package-lock.json**<br><br>
+   - Launch the **Google Chrome Secure Shell App** in another tab to start a SFTP session
+   - Enter a username of **pi**, the IP address displayed on the LCD screen connected to your Raspberry Pi and press the **SFTP** button.
+   
+   
+   **NOTE: The password to use when logging in is written on the brown box of your Raspberry Pi. Also note that the IP address assigned to your Raspberry Pi may differ from the example shown in the screen capture below.**
 
 
    ![SFTP Raspberry Pi](images/sftp-raspberry-pi.png)
@@ -214,7 +226,7 @@ exports.handler = async (event) => {
 
   - Deploy Lambda Function using the AWS Console
   - Select **Services/Lambda**
-  - Press **Create Lambda** button
+  - Press **Create function** button
 
 
    ![Create Lambda](images/create-lambda1.png)

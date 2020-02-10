@@ -72,7 +72,7 @@
 
 ### 3. Install Node Red
 
-   pi@raspberrypi:~ $ **wget https://nodejs.org/dist/latest-v10.x/node-v10.18.1-linux-x64.tar.gz**<br>
+   pi@raspberrypi:~ $ **wget https://nodejs.org/dist/v10.18.1/node-v10.18.1-linux-x64.tar.gz**<br>
    pi@raspberrypi:~ $ **sudo su**<br>
    pi@raspberrypi:~ $ **cd /usr/local**<br>
    pi@raspberrypi:~ $ **tar xvfz /home/ec2-user/node-v10.18.1-linux-x64.tar.gz**<br>
@@ -80,8 +80,8 @@
    pi@raspberrypi:~ $ **ln -s /usr/local/node-v10.18.1-linux-x64/bin/node**<br>
    pi@raspberrypi:~ $ **ln -s /usr/local/node-v10.18.1-linux-x64/bin/npm**<br>
    pi@raspberrypi:~ $ **exit**<br>
-   pi@raspberrypi:~ $ **mkdir ~/iot-workshop**<br>
-   pi@raspberrypi:~ $ **cd ~/iot-workshop**<br>
+   pi@raspberrypi:~ $ **mkdir ~/iot-dashboard**<br>
+   pi@raspberrypi:~ $ **cd ~/iot-dashboard**<br>
    pi@raspberrypi:~ $ **npm init** (press enter whenever prompted to accept default value)<br>
    pi@raspberrypi:~ $ **npm install -s node-red**<br>
    pi@raspberrypi:~ $ **npm install -s node-red-dashboard**<br>

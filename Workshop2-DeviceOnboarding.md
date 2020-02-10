@@ -1,8 +1,16 @@
 # PART 2: AWS IoT Device Registration
 
 ### 1. Register your device to AWS IoT Core
-   - Login to AWS console and ensure your region is US Virginia
-   - Go to **Services/IoT Core** and select **Manage**
+   - Login to AWS console and ensure your region is **US East (N. Virginia)**
+
+
+   ![Select Region](images/select-region.png)
+
+   - Go to **Services/IoT Core** by entering **IoT Core** in the Find Services field and pressing **Enter**
+
+
+   ![IoT Core](images/select-iot-core.png)
+
    - Select **Manage/Things**
    - Press **Register a thing** button
 
@@ -29,12 +37,20 @@
    - Download **public key** and save it as **Downloads/certs/public.pem** on your laptop
    - Download **private key** and save it as **Downloads/certs/private.pem** on your laptop
    - Download **A root CA for AWS IoT** save it as **Downloads/certs/rootCA.pem** on your laptop
-   - Press **Done** button *(make sure you download your certs before you do this)* <br><br>
 
-      ![Download Certificate](images/download-certs.png)
-      ![Download Root Certificate - Part1](images/get-rootca1.png)
-      ![Download Root Certificate - Part2](images/get-rootca2.png)
-      ![Download Root Certificate - Part2](images/create-thing-done.png)
+
+   ![Download Certificate](images/download-certs.png)
+---
+   ![Download Root Certificate - Part1](images/get-rootca1.png)
+---
+   ![Download Root Certificate - Part2](images/get-rootca2.png)
+---
+   - Close the CA Certificates tab pane once you've dowloaded your root CA cert file.
+   - Press **Done** button *(make sure you've downloaded your certs as shown above before you do this)*
+
+
+   ![Download Certificate](images/download-certs2.png)
+
 
 ### 3. Create an IoT Policy for your Thing
    - Select **Secure/Policies**
@@ -43,12 +59,16 @@
 
    ![Create Policy](images/create-policy1.png)
    
-   - Enter **Name=mything-policy**, **Action=iot:\***, **Resource ARN=\***, select **Effect=Allow**
+   - Enter **Name=mything-policy**
+   - Enter **Action=iot:\***
+   - Enter **Resource ARN=\***
+   - Select **Effect=Allow**
    - Press **Create** button<br>
      *NOTE: Typically you would make a more constrained policy in a production environment*
 
 
    ![Create Policy](images/create-policy2.png)
+---
    ![Create Policy](images/create-policy-done.png)
 
 ### 4. Attach your IoT Policy to the device certificate
@@ -84,18 +104,21 @@
    ![Activate Certificate](images/activate-cert.png)
 
 ### 6. Locate your IoT Custom Endpoint value
-   - Select **Settings** and take note of your **Custom Endpoint** (your value may differ).<br> **NOTE: This will be used when you configure the host which your IoT code will connect below**
+   - Select **Settings** and take note of your **Custom Endpoint** (your value may differ from the example shown below).<br>
+   
+
+   **NOTE: Save this value in your notes for the future. It will be used when you configure the host which your IoT code will connect to below**
 
 
    ![Custom Endpoint](images/custom-endpoint.png)
 
 ### 7. Secure copy your previously saved **mything** IoT certificates onto your Raspberry Pi
 
-   - Launch the **Google Chrome Secure Shell Extention** in another tab to start a SFTP session
+   - Launch the **Google Chrome Secure Shell App** in another tab to start a SFTP session
    - Enter a username of **pi**, the IP address displayed on the LCD screen connected to your Raspberry Pi, enter port **80** and press the **SFTP** button.
 
    
-   NOTE: The password to use when logging in is written on the brown box of your Raspberry Pi. Also note that the IP address assigned to your Raspberry Pi may differ from the example shown in the screen capture below.
+   **NOTE: The password to use when logging in is written on the brown box of your Raspberry Pi. Also note that the IP address assigned to your Raspberry Pi may differ from the example shown in the screen capture below.**
 
 
    ![SFTP Raspberry Pi](images/sftp-raspberry-pi.png)
@@ -112,13 +135,13 @@
 
    ![SFTP Raspberry Pi](images/sftp-raspberry-pi-save-put.png)
 
-### 8. SSH onto Raspberry PI using Chrome SSH Extension
+### 8. SSH onto Raspberry PI using Chrome SSH App
 
    - Launch the **Google Chrome Secure Shell Extention** in another tab to start a SSH session
    - Enter a username of **pi**, the IP address displayed on the LCD screen connected to your Raspberry Pi, enter port **80** and press the **[ENTER] Connect** button.
 
    
-   NOTE: The password to use when logging in is written on the brown box of your Raspberry Pi. Also note that the IP address assigned to your Raspberry Pi may differ from the example shown in the screen capture below.
+   **NOTE: The password to use when logging in is written on the brown box of your Raspberry Pi. Also note that the IP address assigned to your Raspberry Pi may differ from the example shown in the screen capture below.**
 
 
    ![SSH to Raspberry Pi](images/ssh-to-raspberry-pi.png)
@@ -128,10 +151,17 @@
    pi@raspberrypi:~ $ **cd ~/Development/iot-workshop**<br>
    pi@raspberrypi:~ $ **npm install -s aws-iot-device-sdk**<br>
 
-   ![npm init](images/nano-edit.png)
-   pi@raspberrypi:~ $ **nano index.js**<br>
-   Copy and paste the following code into the nano edit session and save the file.<br>
-   **IMPORTANT:** Replace the **host:** value with the Custom Endpoint value you took note of earlier<br>
+   ![npm init](images/aws-iot-device-sdk.png)
+   - Use your favorite editor to modify the test program to connect to AWS IoT Core.<br><br>
+
+   pi@raspberrypi:~ $ **nano index.js** *(press control-X to exit and press Y to save the file)*<br>
+   
+
+   ![npm init](images/nano-edit2.png)
+
+   **IMPORTANT: Replace the host: value with the Custom Endpoint value you took note of earlier**<br>
+   **HINT: When using nano use shift and arrow keys to select text and control-K to delete text**<br>
+   **HINT: Right mouse button may be used to copy and paste when using Google Chrome SSH**
 
 <pre>
 <b style="color:red">const AWSIoT  = require('aws-iot-device-sdk');</b>
@@ -274,7 +304,7 @@ main();
 
    - Go back to your tab where you're SSH-ed onto your Raspberry Pi and run the program<br>
    pi@raspberrypi:~ $ **cd ~/Development/iot-workshop**<br>
-   pi@raspberrypi:~ $ **node index.html**<br>
+   pi@raspberrypi:~ $ **node index.js**<br>
 
 
    ![Connect to AWS IoT Core](images/connect-to-AWS.png)
@@ -298,11 +328,15 @@ main();
    ![Button Tests Publications](images/button-test-pubs.png)
 
    - Publish a message to flash red LED on the Raspberry Pi
+   - Enter a Publish **topic** of **mything/flash**
+   - Press **Publish to topic** button
 
 
    ![MyThing Publish](images/publish-flash.png)
 
    - Publish a message to beep the buzzer on the Raspberry Pi
+   - Enter a Publish **topic** of **mything/beep**
+   - Press **Publish to topic** button
 
 
    ![MyThing Publish](images/publish-beep.png)
