@@ -55,7 +55,7 @@
 
 ### 2. SSH onto the EC2 Instance
 
-   - Launch the **Google Chrome Secure Shell Extention**
+   - Launch the **Google Chrome Secure Shell App**
    - Enter a username of **ec2-user**, the public IP address of your EC2 instance and enter port **22**
    - Press **Import...** and import the **node-red.pem** file you downloaded when creating your EC2 instance.
    - Select the **node-red.pem** file when prompted.

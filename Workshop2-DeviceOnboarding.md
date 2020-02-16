@@ -137,7 +137,7 @@
 
 ### 8. SSH onto Raspberry PI using Chrome SSH App
 
-   - Launch the **Google Chrome Secure Shell Extention** in another tab to start a SSH session
+   - Launch the **Google Chrome Secure Shell App** in another tab to start a SSH session
    - Enter a username of **pi**, the IP address displayed on the LCD screen connected to your Raspberry Pi, enter port **80** and press the **[ENTER] Connect** button.
 
    

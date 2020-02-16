@@ -1,7 +1,7 @@
 # PREREQUISITES
 
 ### 1. Hardware
-   - **Raspberry Pi 3 Model B**
+   - **Raspberry Pi 3 Model B+ with 2.5A USB Power Supply**
    - https://www.amazon.ca/gp/product/B07BD3WHCK?pf_rd_p=46535598-d2e0-4bc4-8392-182d8c1e93fc&pf_rd_r=8RP3JR7MBMBSZEBMQAZY
    ![Raspberry Pi](images/raspberry-pi-3b.jpg)
    - **Camera Module 5MP REV 1.3 for Raspberry Pi 3 Model B**
@@ -13,7 +13,9 @@
    - **Grove Pi+ Starter Kit**
    - https://www.seeedstudio.com/GrovePi-Starter-Kit-for-Raspberry-Pi-A-B-B-2-3-CE-certifie-p-2572.html
    ![Grove Pi+](images/grove-pi.jpg)
-
+   - **Grove Pi+ Case for Raspberry Pi**
+   - https://shop.dexterindustries.com/grovepi-case/
+   ![Grove Pi+](images/grovepi-case.jpg)
 
 ### 2. Install Raspbian using NOOBS and test hardware
 
@@ -146,3 +148,11 @@
    - **(45 mins)** Launch Win32 Disk Imager and write the saved image onto the new SD card
    - Repeat the above steps for all Raspberr Pi stations
 
+# POST WORKSHOP CLEANUP
+
+   - ssh onto your Raspberry Pi
+   - sudo /greengrass/ggc/core/greengrassd stop
+   - sudo rm -rf ~/Development/iot-workshop
+   - sudo rm -rf ~/Development/iot-workshop-lambda
+   - sudo rm -rf ~/Development/iot-workshop-greengrass
+   - sudo rm -rf /greengrass
