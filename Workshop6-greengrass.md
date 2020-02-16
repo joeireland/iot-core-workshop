@@ -206,7 +206,7 @@
 
    - Select **Author from scratch**
    - Enter a **Function name** value of **greengrassObjectClassification**
-   - Under **Runtime** select **Python 3.7**
+   - Under **Runtime** select **Python 2.7**
    - For **Permissions**, keep the default setting. This creates an execution role that grants basic Lambda permissions. This role isn't used by AWS IoT Greengrass.
    - Press the **Create function** button
 
