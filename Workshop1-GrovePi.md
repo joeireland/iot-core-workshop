@@ -1,5 +1,12 @@
 # PART 1: Assemble and Test Raspberry Pi
 
+In this lab you will assemble and familiarize yourself with your Raspberry Pi, Pi Camera and Grove Pi+ sensor kit. Afterwards, you will learn how to connect to your Raspberry Pi using SSH to make configuration changes to it. You will use SFTP to securely copy files between it and your laptop. Finally, you complete the lab by writing a Node.js program to control and monitor its Grove Pi+ sensors.
+
+### Architecture
+
+
+   ![Architecture](images/architecture-assemble-and-test-pi.png)
+
 ### 1. Connect Camera to Raspberry Pi
    - Gently push the camera module's ribbon into the Raspberry Pi
    - Ensure the blue-side is facing the Ethernet jack and that it's properly seated

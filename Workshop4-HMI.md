@@ -1,4 +1,11 @@
-# PART 4: Web-based HMI (Human Machine Interface)
+# PART 4: Web-based HMI (Human-Machine Interface)
+
+In this lab you will create a web-based, Human-Machine Interface (HMI) to monitor and control your Raspberry Pi and its connectd Grove Pi+ sensors. Specifically, you will spin up an EC2 instance and install Node-RED (https://nodered.org/) and its node-red-dashboard module (https://flows.nodered.org/node/node-red-dashboard) to creae a real-time dashboard to monitor and control your IoT Devices.
+
+### Architecture
+
+
+   ![Architecture](images/architecture-web-based-hmi.png)
 
 ### 1. Launch EC2 Instance running Amazon Linux 2
 

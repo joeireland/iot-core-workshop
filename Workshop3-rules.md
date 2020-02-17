@@ -1,5 +1,12 @@
 # PART 3: AWS IoT Rules
 
+In this lab you will create IoT rules to sense and respond to IoT telemetry events published from your Raspberry Pi's connected Grove Pi+ sensors. You will start by creating simple rules and will step-wise progress to create more advanced rules. Ultimately, you will finish with creating an advanced IoT rule which will make use of a Lambda function to create a phone call to your cell phone to play a notification message to you.
+
+### Architecture
+
+
+   ![Select Region](images/architecture-iot-rules.png)
+
 ### 1. Create an IAM Role for use when executing your IoT Rule Actions
    - Select **Services/IAM** and select **Roles**
    - Press **Create role** button

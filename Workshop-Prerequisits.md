@@ -152,7 +152,7 @@
 
    - ssh onto your Raspberry Pi
    - sudo /greengrass/ggc/core/greengrassd stop
-   - sudo rm -rf ~/Development/iot-workshop
-   - sudo rm -rf ~/Development/iot-workshop-lambda
-   - sudo rm -rf ~/Development/iot-workshop-greengrass
+   - sudo rm -rf /home/pi/Development/iot-workshop
+   - sudo rm -rf /home/pi/Development/iot-workshop-lambda
+   - sudo rm -rf /home/pi/Development/iot-workshop-greengrass
    - sudo rm -rf /greengrass

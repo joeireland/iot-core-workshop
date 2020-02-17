@@ -1,5 +1,12 @@
 # PART 2: AWS IoT Device Registration
 
+In this lab you will convert your Raspberry Pi program, which can control and monitor its attached Grove Pi+ sensors, to securely connect as a **"Thing"** to the AWS IoT cloud. Once that is completed, you will interact with your Raspberry Pi using the IoT Test MQTT client from the AWS cloud.
+
+### Architecture
+
+
+   ![Select Region](images/architecture-device-registration.png)
+
 ### 1. Register your device to AWS IoT Core
    - Login to AWS console and ensure your region is **US East (N. Virginia)**
 
@@ -10,6 +17,12 @@
 
 
    ![IoT Core](images/select-iot-core.png)
+
+   - If this is the first time you've used **IoT Core** you may be presented with a **Get Started** dialog
+   - Press the **Get started** button to continue
+
+
+   ![IoT Core](images/iot-get-started.png)
 
    - Select **Manage/Things**
    - Press **Register a thing** button
@@ -40,8 +53,6 @@
 
 
    ![Download Certificate](images/download-certs.png)
----
-   ![Download Root Certificate - Part1](images/get-rootca1.png)
 ---
    ![Download Root Certificate - Part2](images/get-rootca2.png)
 ---
@@ -98,6 +109,7 @@
 
    ![Attach Thing](images/attach-thing2.png)
 
+   - We'll now activate your certificate.
    - Select **...** pulldown menu of your certificate, and select **Activate**
 
 
@@ -132,6 +144,7 @@
 
   - Select your **mything** IoT certs that you previously stored in **Downloads/certs**
 
+**IMPORTANT: Make sure the names of your files are EXACTLY as shown below. If not you should rename the files to match those exact names or you will not be able to connect your thing successfully to AWS IoT**
 
    ![SFTP Raspberry Pi](images/sftp-raspberry-pi-save-put.png)
 
@@ -290,7 +303,7 @@ main();
    - Login to AWS console
    - Go to **Services/IoT Core**
    - Select **Test**
-   - Subscribe **topic="mything/#** and press **Subscribe to topic** button
+   - Subscribe **topic=mything/#** and press **Subscribe to topic** button
 
 
    ![MyThing Subscribe](images/mything-subscribe.png)
@@ -342,11 +355,15 @@ main();
    ![MyThing Publish](images/publish-beep.png)
 
    - Publish a message to turn on the blue LED attached to the Raspberry Pi
+   - Enter a Publish **topic** of **mything/blue/on**
+   - Press the **Publish to topic** button
 
 
    ![MyThing Publish](images/publish-blue-on.png)
 
    - Publish a message to turn off the blue LED attached to the Raspberry Pi
+   - Enter a Publish **topic** of **mything/blue/off**
+   - Press the **Publish to topic** button
 
 
    ![MyThing Publish](images/publish-blue-off.png)

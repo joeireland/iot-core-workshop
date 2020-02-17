@@ -1,5 +1,13 @@
 # PART 5: Thing Shadows
 
+In a perfect world your IoT device will be connected to the Internet 24x7x365. However, there are scenarios where this just doesn't hold true. Specifically, there could be ISP outages, Internet outages due to power failures or design-level contraints where your IoT device is battery operated and must be constrained to only connect during select intervals. In order to help ease the control of your IoT devices in these situations, the AWS IoT Core system provides the **Device Shadow Service**. In this lab you will enhance your Raspberry Pi program to make use of a **Device Shadow** so that IoT client applications can get and set its state over MQTTS or HTTPS, regardless of whether it is connected to the Internet. Specifically, your application gets and sets the state of the device shadow and your device will synchronize its state with its device shadow when connectivity is re-established.
+
+### Architecture
+
+
+   ![Architecture](images/architecture-thing-shadows.png)
+
+
 ### 1. SSH onto Raspberry PI using Chrome SSH App
 
    - Launch the **Google Chrome Secure Shell App**

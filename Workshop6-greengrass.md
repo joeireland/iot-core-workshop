@@ -1,5 +1,15 @@
 # PART 6: Greengrass Running Machine Learning At The Edge
 
+In a perfect world your IoT device will be connected to the Internet 24x7x365. However, there are scenarios where this just doesn't hold true. Specifically, there could be ISP outages or Internet outages due to power failures. Additionally, there are scenarios where you need to react to events occuring at the edge in a more timely fashion. Specifically, there are scenarios where your application cannot afford the latency involved in communicating events from the edge to the IoT Cloud and back again to provide intelligence. In these scenarios, **AWS IoT Greengrass** seamlessly extends AWS to edge devices so they can act locally on the data they generate, while still using the cloud for management, analytics, and durable storage. With **AWS IoT Greengrass**, devices can run AWS Lambda functions, Docker containers, or both, execute predictions based on machine learning models, keep device data in sync, and communicate with other devices securely – even when not connected to the Internet.
+
+In this lab you will enable your Raspberry Pi to securely connect to the **AWS IoT Greengrass** service and execute Lambda functions locally on images detected from your Pi Camera device. Specifically, you will create an MXNet machine learning, object recognition, Lambda Function which will monitor images it detects on the Pi Camera connected to your Raspberry Pi. The Lambda function will proivide real-time intelligence at the edge and report its findings to your MQTT test client.
+
+
+### Architecture
+
+
+   ![Architecture](images/architecture-greengrass.png)
+
 ### 1. SSH onto Raspberry PI using Chrome SSH App
    - Launch the **Google Chrome Secure Shell App** in another tab to start a SSH session
    - Enter a username of **pi**, the IP address displayed on the LCD screen connected to your Raspberry Pi, enter port **80** and press the **[ENTER] Connect** button.
@@ -593,7 +603,7 @@
    - Go to **Services/IoT Core** and then select **Test**
    - Under **Subscriptions** 
    - Enter a **Topic** of **hello/world**
-   - Press the **Subscribe** button
+   - Press the **Subscribe to topic** button
 
 
    ![Greengrass Groups](images/test-greengrass1.png)
