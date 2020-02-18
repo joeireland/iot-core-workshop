@@ -30,7 +30,7 @@ In a perfect world your IoT device will be connected to the Internet 24x7x365. H
 
 <pre>
 const AWSIoT  = require('aws-iot-device-sdk');
-const GrovePi = require('node-grovepi').GrovePi;
+const GrovePi = require('grovepi').GrovePi;
 const Board   = GrovePi.board;
 const Sensors = GrovePi.sensors;
 

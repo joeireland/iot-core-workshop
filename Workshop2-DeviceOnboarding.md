@@ -178,7 +178,7 @@ In this lab you will convert your Raspberry Pi program, which can control and mo
 
 <pre>
 <b style="color:red">const AWSIoT  = require('aws-iot-device-sdk');</b>
-const GrovePi = require('node-grovepi').GrovePi;
+const GrovePi = require('grovepi').GrovePi;
 const Board   = GrovePi.board;
 const Sensors = GrovePi.sensors;
 

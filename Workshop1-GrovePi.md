@@ -65,14 +65,14 @@ In this lab you will assemble and familiarize yourself with your Raspberry Pi, P
    ![SSH to Raspberry Pi](images/ssh-to-raspberry-pi.png)
 
 ### 7. Create Node.js program to test the Grove Pi+ Sensors
-   - Create a directory, initalize a Node.js project using **npm init** and install the **node-grovepi** NPM library for use by the project using the following commands:
+   - Create a directory, initalize a Node.js project using **npm init** and install the **grovepi** NPM library for use by the project using the following commands:
 
 
    pi@raspberrypi:~ $ **cd ~/Development**<br>
    pi@raspberrypi:~ $ **mkdir iot-workshop**<br>
    pi@raspberrypi:~ $ **cd iot-workshop**<br>
    pi@raspberrypi:~ $ **npm init** *(for each prompt press enter to select the default value)*<br> 
-   pi@raspberrypi:~ $ **npm install -s node-grovepi** *(Ignore all warning this may generate)*<br>
+   pi@raspberrypi:~ $ **npm install -s grovepi** *(Ignore all warning this may generate)*<br>
 
    ![npm init](images/npm-init.png)
    - Create a test program to control the Grove Pi+ board and its sensors. The program will flash the Red LED light, beep the buzzer, detect button presses and detect angle sensor changes. Use your favorite editor to save this program to a file named **index.js**<br>
@@ -87,7 +87,7 @@ In this lab you will assemble and familiarize yourself with your Raspberry Pi, P
    ![npm init](images/nano-edit2.png)
 
 <pre>
-const GrovePi = require('node-grovepi').GrovePi;
+const GrovePi = require('grovepi').GrovePi;
 const Board   = GrovePi.board;
 const Sensors = GrovePi.sensors;
 
