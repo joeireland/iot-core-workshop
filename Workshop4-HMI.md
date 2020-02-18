@@ -129,6 +129,7 @@ In this lab you will create a web-based, Human-Machine Interface (HMI) to monito
 
    ![Create UI Group](images/create-ui-group.png)
 
+   - Edit your buttom button by Double-clicking it
    - Select a Group of **[IoT Workshop] Default**
    - Enter a Label of **Flash**
    - Enter a Topic of **mything/flash** and
@@ -150,6 +151,7 @@ In this lab you will create a web-based, Human-Machine Interface (HMI) to monito
 
    ![Add MQTT](images/add-mqtt.png)
 
+   - Edit **mqtt** by Double-clicking it
    - Press the pencil button to **Add new mqtt-broker...**
 
 
@@ -179,7 +181,7 @@ In this lab you will create a web-based, Human-Machine Interface (HMI) to monito
    ![Upload Private Key](images/upload-private.png)
    ![Upload Root CA](images/upload-rootca.png)
 
-   - Press **Update** button
+   - Press the **Add** button
 
 
    ![Update Certs](images/update-cert.png)

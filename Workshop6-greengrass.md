@@ -35,7 +35,7 @@ In this lab you will enable your Raspberry Pi to securely connect to the **AWS I
    pi@raspberrypi:~ $ **sudo wget https://mxnet-public.s3.amazonaws.com/install/raspbian/mxnet-1.5.0-py2.py3-none-any.whl**<br>
    pi@raspberrypi:~ $ **sudo pip install mxnet-1.5.0-py2.py3-none-any.whl**<br>
    pi@raspberrypi:~ $ **sudo pip uninstall numpy**<br>
-   pi@raspberrypi:~ $ **sudo pip install numpy**<br>
+   pi@raspberrypi:~ $ **sudo pip install numpy==1.16.6**<br>
    pi@raspberrypi:~ $ **cp greengrassObjectClassification.zip ..**<br>
 
 
