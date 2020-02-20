@@ -71,7 +71,7 @@ In this lab you will create a web-based, Human-Machine Interface (HMI) to monito
    ![SSH to EC2](images/ssh-ec2.png)
    ![Select node-red.pem](images/node-red-pem.png)
 
-   - Select the **node-red.pem** Identity you just imported (NOTE: If it doesn't show up in selection list wait until it does)
+   - Select the **node-red.pem** Identity you just imported (NOTE: If it doesn't show up in the selection list you may need to wait longer for the .pem file to upload or you many need to refresh the page on your web browser)
    - Press the **[ENTER] Connect** button.
 
 

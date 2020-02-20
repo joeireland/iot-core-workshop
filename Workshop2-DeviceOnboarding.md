@@ -130,7 +130,7 @@ In this lab you will convert your Raspberry Pi program, which can control and mo
    - Enter a username of **pi**, the IP address displayed on the LCD screen connected to your Raspberry Pi, enter port **80** and press the **SFTP** button.
 
    
-   **NOTE: The password to use when logging in is written on the brown box of your Raspberry Pi. Also note that the IP address assigned to your Raspberry Pi may differ from the example shown in the screen capture below.**
+   **NOTE: The password to use when logging in is written on your Raspberry Pi case. Also note that the IP address assigned to your Raspberry Pi may differ from the example shown in the screen capture below.**
 
 
    ![SFTP Raspberry Pi](images/sftp-raspberry-pi.png)
@@ -154,7 +154,7 @@ In this lab you will convert your Raspberry Pi program, which can control and mo
    - Enter a username of **pi**, the IP address displayed on the LCD screen connected to your Raspberry Pi, enter port **80** and press the **[ENTER] Connect** button.
 
    
-   **NOTE: The password to use when logging in is written on the brown box of your Raspberry Pi. Also note that the IP address assigned to your Raspberry Pi may differ from the example shown in the screen capture below.**
+   **NOTE: The password to use when logging in is written on your Raspberry Pi case. Also note that the IP address assigned to your Raspberry Pi may differ from the example shown in the screen capture below.**
 
 
    ![SSH to Raspberry Pi](images/ssh-to-raspberry-pi.png)
@@ -173,6 +173,7 @@ In this lab you will convert your Raspberry Pi program, which can control and mo
    ![npm init](images/nano-edit2.png)
 
    **IMPORTANT: Replace the host: value with the Custom Endpoint value you took note of earlier**<br>
+   **HINT: If you forgot your Custom Endpoint value you can get it from Iot Core/Settings**<br>
    **HINT: When using nano use shift and arrow keys to select text and control-K to delete text**<br>
    **HINT: Right mouse button may be used to copy and paste when using Google Chrome SSH**
 

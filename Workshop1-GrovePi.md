@@ -59,7 +59,7 @@ In this lab you will assemble and familiarize yourself with your Raspberry Pi, P
    - Enter a username of **pi**, the IP address displayed on the LCD screen connected to your Raspberry Pi, enter port ***80*** and press the **[ENTER] Connect** button.
 
 
-   **NOTE: The password to use when logging in is written on the brown box of your Raspberry Pi. Also note that the IP address assigned to your Raspberry Pi may differ from the example shown in the screen capture below.**
+   **NOTE: The password to use when logging in is written on your Raspberry Pi case. Also note that the IP address assigned to your Raspberry Pi may differ from the example shown in the screen capture below.**
 
 
    ![SSH to Raspberry Pi](images/ssh-to-raspberry-pi.png)
@@ -191,7 +191,7 @@ main();
    - Enter a username of **pi**, the IP address displayed on the LCD screen connected to your Raspberry Pi, enter port **80** and press the **SFTP** button.
 
    
-   **NOTE: The password to use when logging in is written on the brown box of your Raspberry Pi. Also note that the IP address assigned to your Raspberry Pi may differ from the example shown in the screen capture below.**
+   **NOTE: The password to use when logging in is written on your Raspberry Pi case. Also note that the IP address assigned to your Raspberry Pi may differ from the example shown in the screen capture below.**
 
 
    ![SFTP Raspberry Pi](images/sftp-raspberry-pi.png)

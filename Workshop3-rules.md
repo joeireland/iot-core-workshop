@@ -147,7 +147,7 @@ In this lab you will create IoT rules to sense and respond to IoT telemetry even
    **PART 1:** Create a Lambda function which will act as the rule's action
 
    - Launch the **Google Chrome Secure Shell App**
-   - Enter a username of **pi**, the IP address displayed on the LCD screen connected to your Raspberry Pi and press the **[ENTER] Connect** button. Note that the password to use when logging in is written on the brown box of your Raspberry Pi.
+   - Enter a username of **pi**, the IP address displayed on the LCD screen connected to your Raspberry Pi and press the **[ENTER] Connect** button. Note that the password to use when logging in is written on your Raspberry Pi case. Also note that the IP address assigned to your Raspberry Pi may differ from the example shown in the screen capture below.
 
 
    ![SSH to Raspberry Pi](images/ssh-to-raspberry-pi.png)
@@ -216,7 +216,7 @@ exports.handler = async (event) => {
    - Enter a username of **pi**, the IP address displayed on the LCD screen connected to your Raspberry Pi and press the **SFTP** button.
    
    
-   **NOTE: The password to use when logging in is written on the brown box of your Raspberry Pi. Also note that the IP address assigned to your Raspberry Pi may differ from the example shown in the screen capture below.**
+   **NOTE: The password to use when logging in is written on your Raspberry Pi case. Also note that the IP address assigned to your Raspberry Pi may differ from the example shown in the screen capture below.**
 
 
    ![SFTP Raspberry Pi](images/sftp-raspberry-pi.png)
