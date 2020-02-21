@@ -202,7 +202,7 @@ In this lab you will create a web-based, Human-Machine Interface (HMI) to monito
 
    ![Created MQTT Config](images/connect-mqtt.png)
 
-   - Depoly your IoT Dashboard by pressing the **Depoly** button
+   - Deploy your IoT Dashboard by pressing the **Deploy** button
 
 
    ![Created MQTT Config](images/deploy-dashboard1.png)
