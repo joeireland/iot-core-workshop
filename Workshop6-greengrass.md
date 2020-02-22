@@ -85,8 +85,8 @@ In this lab you will enable your Raspberry Pi to securely connect to the **AWS I
 
    ![Grant Greengrass Perm](images/grant-greengrass-perm.png)
 
-   - To setup your Greengrass Group we'll use easy creation. A core needs a certificate and keys that allow it to access AWS IoT and an AWS IoT policy that allows it to perform AWS IoT and AWS IoT Greengrass actions. When you choose the **Use easy creation** option, these security resources are created for you and the core is provisioned in the AWS IoT registry.
-   - Press **Use easy creation** button
+   - To setup your Greengrass Group we'll use default creation. A core needs a certificate and keys that allow it to access AWS IoT and an AWS IoT policy that allows it to perform AWS IoT and AWS IoT Greengrass actions. When you choose the **Use default creation** option, these security resources are created for you and the core is provisioned in the AWS IoT registry.
+   - Press **Use default creation** button
 
 
    ![Setup Greengrass Group](images/setup-greengrass-group.png)

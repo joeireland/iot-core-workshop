@@ -40,6 +40,9 @@ In this lab you will create a web-based, Human-Machine Interface (HMI) to monito
    - Press **Review and Launch** button
 
 
+   **NOTE: In a production environment you would typically create a more constrained Source for your security group rules**
+
+
    ![HTTP Security Group Rule](images/http-security-group-rule.png)
 
    - Select **Create a new key pair**
@@ -79,20 +82,20 @@ In this lab you will create a web-based, Human-Machine Interface (HMI) to monito
 
 ### 3. Install Node Red
 
-   pi@raspberrypi:~ $ **wget https://nodejs.org/dist/v10.18.1/node-v10.18.1-linux-x64.tar.gz**<br>
-   pi@raspberrypi:~ $ **sudo su**<br>
-   pi@raspberrypi:~ $ **cd /usr/local**<br>
-   pi@raspberrypi:~ $ **tar xvfz /home/ec2-user/node-v10.18.1-linux-x64.tar.gz**<br>
-   pi@raspberrypi:~ $ **cd /usr/sbin**<br>
-   pi@raspberrypi:~ $ **ln -s /usr/local/node-v10.18.1-linux-x64/bin/node**<br>
-   pi@raspberrypi:~ $ **ln -s /usr/local/node-v10.18.1-linux-x64/bin/npm**<br>
-   pi@raspberrypi:~ $ **exit**<br>
-   pi@raspberrypi:~ $ **mkdir ~/iot-dashboard**<br>
-   pi@raspberrypi:~ $ **cd ~/iot-dashboard**<br>
-   pi@raspberrypi:~ $ **npm init** (press enter whenever prompted to accept default value)<br>
-   pi@raspberrypi:~ $ **npm install -s node-red**<br>
-   pi@raspberrypi:~ $ **npm install -s node-red-dashboard**<br>
-   pi@raspberrypi:~ $ **sudo node node_modules/node-red/red.js --port 80**<br>
+   [ec2-user@ip-172-31-29-44 ~]$ **wget https://nodejs.org/dist/v10.18.1/node-v10.18.1-linux-x64.tar.gz**<br>
+   [ec2-user@ip-172-31-29-44 ~]$  **sudo su**<br>
+   [ec2-user@ip-172-31-29-44 ~]$ **cd /usr/local**<br>
+   [ec2-user@ip-172-31-29-44 ~]$ **tar xvfz /home/ec2-user/node-v10.18.1-linux-x64.tar.gz**<br>
+   [ec2-user@ip-172-31-29-44 ~]$ **cd /usr/sbin**<br>
+   [ec2-user@ip-172-31-29-44 ~]$ **ln -s /usr/local/node-v10.18.1-linux-x64/bin/node**<br>
+   [ec2-user@ip-172-31-29-44 ~]$ **ln -s /usr/local/node-v10.18.1-linux-x64/bin/npm**<br>
+   [ec2-user@ip-172-31-29-44 ~]$ **exit**<br>
+   [ec2-user@ip-172-31-29-44 ~]$ **mkdir ~/iot-dashboard**<br>
+   [ec2-user@ip-172-31-29-44 ~]$ **cd ~/iot-dashboard**<br>
+   [ec2-user@ip-172-31-29-44 ~]$ **npm init** (press enter whenever prompted to accept default value)<br>
+   [ec2-user@ip-172-31-29-44 ~]$ **npm install -s node-red**<br>
+   [ec2-user@ip-172-31-29-44 ~]$ **npm install -s node-red-dashboard**<br>
+   [ec2-user@ip-172-31-29-44 ~]$ **sudo node node_modules/node-red/red.js --port 80**<br>
 
 
    ![Install Node Red](images/install-node-red.png)

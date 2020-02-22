@@ -17,6 +17,15 @@
    - https://shop.dexterindustries.com/grovepi-case/
    ![Grove Pi+](images/grovepi-case.jpg)
 
+### SOFTWARE
+   - You may follow the steps outlined below to install the necessary software in order to run the workshop (i.e. Raspbian OS, Pi Camera Module, Greengrass Core)
+   - Alternatively you may download a pre-built Micro-SD image from the link below and use the Win32 Disk Imager to write it onto your Micro-SD cards
+   - Refer to step 5 below on how to install Win32 Disk Imager and how to write the image after you download the image from the link below
+   
+
+   **PREBUILT MICRO-SD IMAGE - https://tinyurl.com/iot-workshop-microSD-v1**
+
+
 ### 2. Install Raspbian using NOOBS and test hardware
 
    - REFERENCE: https://www.raspberrypi.org/documentation/installation/noobs.md
@@ -112,11 +121,11 @@
      - cd /usr/bin
      - ln -s /usr/local/node-v10.9.0-linux-armv7l/bin/node
      - ln -s /usr/local/node-v10.9.0-linux-armv7l/bin/npm
-   - Copy workshop software onto your pi and test Grove Pi+
-     - scp -P 80 iot-workshop-software-2020-02-01.tgz pi@IP-OF-PI:/tmp
+   - Copy workshop software onto your pi and test Grove Pi+ (get it from https://github.com/joeireland/iot-core-workshop - software/iot-workshop-software.tgz)
+     - scp -P 80 iot-workshop-software.tgz pi@IP-OF-PI:/tmp
      - ssh -p 80 pi@IP-OF-PI
      - cd ~
-     - tar xvfz /tmp/iot-workshop-software-2020-02-01.tgz
+     - tar xvfz /tmp/iot-workshop-software.tgz
      - cd ~/Development/grove-ip-nodejs
      - npm install
      - node index.js
