@@ -1,6 +1,6 @@
 # PART 4: Web-based HMI (Human-Machine Interface)
 
-In this lab you will create a web-based, Human-Machine Interface (HMI) to monitor and control your Raspberry Pi and its connectd Grove Pi+ sensors. Specifically, you will spin up an EC2 instance and install Node-RED (https://nodered.org/) and its node-red-dashboard module (https://flows.nodered.org/node/node-red-dashboard) to creae a real-time dashboard to monitor and control your IoT Devices.
+In this lab you will create a web-based, Human-Machine Interface (HMI) to monitor and control your Raspberry Pi and its connected Grove Pi+ sensors. Specifically, you will spin up an EC2 instance and install Node-RED (https://nodered.org/) and its **node-red-dashboard** module (https://flows.nodered.org/node/node-red-dashboard) to create a real-time dashboard to monitor and control your IoT Devices.
 
 ### Architecture
 
@@ -132,7 +132,7 @@ In this lab you will create a web-based, Human-Machine Interface (HMI) to monito
 
    ![Create UI Group](images/create-ui-group.png)
 
-   - Edit your buttom button by Double-clicking it
+   - Edit your bottom button by Double-clicking it
    - Select a Group of **[IoT Workshop] Default**
    - Enter a Label of **Flash**
    - Enter a Topic of **mything/flash** and
@@ -215,6 +215,8 @@ In this lab you will create a web-based, Human-Machine Interface (HMI) to monito
    - Press the **Beep** button and your Raspberry Pi will beep
    - Press the **Flash** button and your red LED on your Raspberry Pi will flash
 
+**NOTE: If your Raspberry Pi doesn't beep or flash
+
    ![Created MQTT Config](images/test-dashboard1.png)
 
 ### 5. Modify HMI Dashboard to display IoT telemetry data from Raspberry Pi
@@ -224,7 +226,7 @@ In this lab you will create a web-based, Human-Machine Interface (HMI) to monito
 
    ![Add MQTT](images/add-mqtt-in.png)
 
-   - Edit **MQTT in** by double-clicking it
+   - Edit **mqtt** you just dropped onto your dashboard by double-clicking it
    - Select a Server of **iot-workshop**
    - Enter a Topic of **mything/angle**
    - Select a QoS of **1**
