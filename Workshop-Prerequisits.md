@@ -19,7 +19,7 @@
 
 ### SOFTWARE
    - You may follow the steps outlined below to install the necessary software in order to run the workshop (i.e. Raspbian OS, Pi Camera Module, Greengrass Core)
-   - Alternatively you may download a pre-built Micro-SD image from the link below and use the Win32 Disk Imager to write it onto your Micro-SD cards
+   - Alternatively you may download a pre-built Micro-SD image from the link below and use the Win32 Disk Imager to write it onto your Micro-SD cards. Please note that this image was burned from a 32GB Micro-SD card described above and it is may not install on any other card type or size variation.
    - Refer to step 5 below on how to install Win32 Disk Imager and how to write the image after you download the image from the link below
    
 
