@@ -8,8 +8,10 @@ In this lab you will assemble and familiarize yourself with your Raspberry Pi, P
    ![Architecture](images/architecture-assemble-and-test-pi.png)
 
 ### 1. Connect Camera to Raspberry Pi
-   - Gently push the camera module's ribbon into the Raspberry Pi
+   - Lift up the connector levers on the both sides of the connector
+   - Gently push the camera module's ribbon cable into the Raspberry Pi
    - Ensure the blue-side is facing the Ethernet jack and that it's properly seated
+   - Push down the connector levers to secure the camera module's ribbon cable
 
 
    ![Connect Camera](images/connect-camera.jpg)

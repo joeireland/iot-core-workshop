@@ -164,7 +164,7 @@ In this lab you will create a web-based, Human-Machine Interface (HMI) to monito
    - Enter **Server** with the value of your MQTT Endpoint<br>
 *(NOTE: This value may be obtained from Iot Core/Settings and referring to the Endpoint field)*
    - Enter a Port of **8883**
-   - Enter a Cient ID of **node-red**
+   - Enter a Client ID of **node-red**
    - Select **Enable secure (SSL/TLS) certificate**
    - Press the pencil button to **Add new tls-config...**
 
@@ -215,7 +215,6 @@ In this lab you will create a web-based, Human-Machine Interface (HMI) to monito
    - Press the **Beep** button and your Raspberry Pi will beep
    - Press the **Flash** button and your red LED on your Raspberry Pi will flash
 
-**NOTE: If your Raspberry Pi doesn't beep or flash
 
    ![Created MQTT Config](images/test-dashboard1.png)
 
