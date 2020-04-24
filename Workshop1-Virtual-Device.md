@@ -104,7 +104,12 @@ In this lab you will install and configure your virtual IoT device for use by th
 
 ### 2. SSH onto the EC2 Instance
 
-   - Launch the **Google Chrome Secure Shell App**
+   - Launch the **Google Chrome Secure Shell App** (install app if not already installed using this URL - https://chrome.google.com/webstore/detail/secure-shell-app/pnhechapfaindjhompbnflcldabbghjo?hl=en)
+   - Press **Apps** icon displayed on your bookmark bar
+
+
+   ![SSH to virtual IoT device EC2 instance](images/launch-ssh-app.png)
+   - Press **Secure Shell App** icon
    - Enter a username of **ec2-user**, the public IP address of your EC2 instance and enter port **22**
    - Press **Import...** and import the **iot-virtual-device.pem** file you downloaded when creating your EC2 instance.
    - Select the **iot-virtual-device.pem** file when prompted.
@@ -113,7 +118,7 @@ In this lab you will install and configure your virtual IoT device for use by th
    ![SSH to EC2](images/ssh-ec2-virtdev.png)
    ![Select node-red.pem](images/iot-virtual-device-pem.png)
 
-   - Select the **iot-virtual-device.pem** Identity you just imported (NOTE: If it doesn't show up in the selection list you may need to wait longer for the .pem file to upload or you many need to refresh the page on your web browser)
+   - Select the **iot-virtual-device.pem** Identity you just imported (**NOTE: If it doesn't show up in the selection list you may need to wait longer for the .pem file to upload or you many need to refresh the page on your web browser**)
    - Press the **[ENTER] Connect** button.
 
 
