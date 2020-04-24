@@ -153,7 +153,7 @@ In this lab you will create IoT rules to sense and respond to IoT telemetry even
    ![SSH to Virtual Device](images/ssh-to-virtdev.png)
 
 
-   [ec2-user@ip-172-31-29-44 ~]$ **cd ~**<br>
+   [ec2-user@ip-172-31-29-44 ~]$ **cd ~/**<br>
    [ec2-user@ip-172-31-29-44 ~]$ **mkdir iot-workshop-lambda**<br>
    [ec2-user@ip-172-31-29-44 ~]$ **cd iot-workshop-lambda**<br>
    [ec2-user@ip-172-31-29-44 ~]$ **npm init** *(when prompted press enter to select the default value)*<br>
