@@ -298,3 +298,7 @@ In this lab you will create a web-based, Human-Machine Interface (HMI) to monito
    ![Created MQTT Config](images/test-dashboard2.png)
 
    **BONUS POINTS: Modify your dashboard to have Amazon colors as shown above**
+
+# Continue Workshop
+
+[Part 5 - Thing Shadows](./Workshop5-Virtual-thing-shadow.md)

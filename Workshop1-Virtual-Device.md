@@ -163,3 +163,7 @@ In this lab you will install and configure your virtual IoT device for use by th
 
 
    ![Virtual Device Testing](images/iot-virtual-device-testing2.png)
+
+# Continue Workshop
+
+[Part 2 - AWS IoT Device Registration](./Workshop2-Virtual-DeviceOnboarding.md)

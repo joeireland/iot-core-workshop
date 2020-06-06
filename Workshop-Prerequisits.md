@@ -165,3 +165,8 @@
    - sudo rm -rf /home/pi/Development/iot-workshop-lambda
    - sudo rm -rf /home/pi/Development/iot-workshop-greengrass
    - sudo rm -rf /greengrass
+
+
+# Start Workshop
+
+[Part 1 - Assemble and Test Raspberry Pi](./Workshop1-GrovePi.md)

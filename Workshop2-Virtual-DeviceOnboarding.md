@@ -398,3 +398,7 @@ main();
 
 
    ![MyThing Publish](images/publish-blue-off.png)
+
+# Continue Workshop
+
+[Part 3 - AWS IoT Rules](./Workshop3-Virtual-rules.md)

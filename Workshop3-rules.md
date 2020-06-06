@@ -301,3 +301,7 @@ exports.handler = async (event) => {
    ![Configure Action](images/create-makecall-rule-done.png)
   - Once the rule indicates it's enabled you may test it (refresh your browser until it indicates "enabled").
   - Test the rule by turning the angle sensor. When the angle sensor is > 95 your cell phone will ring and when answered will play a message.
+
+# Continue Workshop
+
+[Part 4 - Web-based HMI (Human-Machine Interface)](./Workshop4-HMI.md)

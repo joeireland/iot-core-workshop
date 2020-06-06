@@ -207,3 +207,7 @@ main();
 
 
    ![SFTP Raspberry Pi](images/sftp-raspberry-pi-save-file.png)
+
+# Continue Workshop
+
+[Part 2 - AWS IoT Device Registration](./Workshop2-DeviceOnboarding.md)

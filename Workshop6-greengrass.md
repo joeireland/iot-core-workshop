@@ -609,3 +609,5 @@ In this lab you will enable your Raspberry Pi to securely connect to the **AWS I
    ![Greengrass Groups](images/test-greengrass1.png)
    ---
    ![Greengrass Groups](images/test-greengrass2.png)
+
+# Congratulations, Workshop Complete!!!

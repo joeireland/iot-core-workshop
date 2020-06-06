@@ -303,3 +303,7 @@ main();
 
 
    ![MyThing Subscribe](images/thing-shadow-blue-on2.png)
+
+# Continue Workshop
+
+[Part 6 - Greengrass Machine Learning @ The Edge](./Workshop6-greengrass.md)
