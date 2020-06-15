@@ -9,7 +9,12 @@ In this lab you will install and configure your virtual IoT device for use by th
 
 ### 1. Launch EC2 Instance running Amazon Linux 2
 
-   - Login to AWS console
+   - Login to AWS console and ensure your region is **US East (N. Virginia)**
+
+
+   ![Select Region](images/select-region.png)
+
+
    - Go to **Services/EC2** and select **Instances**
    - Press the **Launch Instance** button
 
