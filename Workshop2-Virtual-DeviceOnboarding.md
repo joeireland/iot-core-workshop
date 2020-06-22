@@ -133,9 +133,9 @@ In this lab you will convert your virtual device program, which can control and 
    ![SFTP Virtual Device](images/sftp-virtual-device.png)
 
   nasftp ./ > **cd ~/iot-core-device-simulator-master**<br>
-  nasftp /home/pi/Development/iot-workshop/ > **mkdir certs**<br>
-  nasftp /home/pi/Development/iot-workshop/ > **cd certs**<br>
-  nasftp /home/pi/Development/iot-workshop/certs/ > **put**<br>
+  nasftp /home/ec2-user/iot-core-device-simulator-master/ > **mkdir certs**<br>
+  nasftp /home/ec2-user/iot-core-device-simulator-master/ > **cd certs**<br>
+  nasftp /home/ec2-user/iot-core-device-simulator-master/certs/ > **put**<br>
 
    ![SFTP Raspberry Pi](images/sftp-raspberry-pi-put-file.png)
 

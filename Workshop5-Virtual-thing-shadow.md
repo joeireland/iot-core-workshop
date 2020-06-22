@@ -22,7 +22,7 @@ In a perfect world your IoT device will be connected to the Internet 24x7x365. H
    [ec2-user@ip-172-31-29-44 ~]$ **cd ~/iot-core-device-simulator-master**<br>
    [ec2-user@ip-172-31-29-44 ~]$ **npm install -s condition-variable**<br>
 
-   ![npm init](images/nano-edit.png)
+   ![npm init](images/nano-edit5.png)
    [ec2-user@ip-172-31-29-44 ~]$ **nano index.js**<br>
    Copy and paste the following code into the nano edit session and save the file.<br>
    **IMPORTANT:** Replace the **host:** value with the Custom Endpoint value you took note of earlier<br>
@@ -115,7 +115,7 @@ function onWebSocketConnect(ws, req) {
   console.log('WebSocket Connected');
 
   ws.on('message', onWebSocketMessage);
-  online.complete();
+  <b style="color:red">online.complete();</b>
 
   flash();
   beep();
@@ -278,7 +278,7 @@ main();
    - Stop the running program by pressing Control-C (This will simulate a lost network connection)
 
 
-   ![MyThing Subscribe](images/stop-program.png)
+   ![MyThing Subscribe](images/stop-program-virtdev.png)
 
 **Go back to the tab pane where you opened the Thing Test page to publish messages**
    - Specify a topic of **$aws/things/mything/shadow/update**
@@ -303,10 +303,11 @@ main();
    ![MyThing Subscribe](images/thing-shadow-blue-on-off.png)
 
 **Go to the tab pane where you opened the SSH session to your virtual IoT Device**
-   - Start the program running again (This will simulate the network restablishing connectivity)
+   - Start the program running again (This will simulate the network restablishing connectivity)<br>
+   [ec2-user@ip-172-31-29-44 ~]$ **sudo node index.js --port=80**
 
 
-   ![MyThing Subscribe](images/start-program.png)
+   ![MyThing Subscribe](images/start-program-virtdev.png)
 **Notice that the virtual IoT device's blue LED turns on**
 
 **Go back to the tab pane where you opened the Thing Shadow**
